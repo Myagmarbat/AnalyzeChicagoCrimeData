@@ -1,0 +1,25 @@
+This project Performed Chicago Crime Data Analysis with Apache Spark and Scala. Identified factors correlated to high crime rate.
+
+To run the code:
+1- put the the crimes.csv file on file:////home/cloudera/workspace/sparkexample/crimes.csv.
+2- import the project into Eclipse IDE with scala
+3- excute the each scala file
+4- The output files will be generated under the directory of sparkexample.
+
+Or comment each file with following:
+/*object testingsort extends App{
+  override def  main(args: Array[String]) {
+    val conf = new SparkConf().setAppName("Spark Sort").setMaster("local")
+    val sc = new SparkContext(conf)*/
+Then execute file in scala command line with -i filename.
+
+
+About the source of data:
+
+The original data can be got from https://catalog.data.gov/dataset/crimes-2001-to-present-398a4 .
+Have done some little transform work to make it easy to analysis data.
+In real analysis project, we extract about 39000 lines data occured in June,2007.
+Please check out the data crimes.csv.  
+
+
+The analysis code in under location sparkexample\src\main\scala.
